@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filgram.ConsoleApp", "Filgram.ConsoleApp\Filgram.ConsoleApp.csproj", "{ED906821-C3C7-478F-B820-8510DF3B93F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIlegram.Tests", "FIlegram.Tests\FIlegram.Tests.csproj", "{1BC24A2E-1B1C-4CD7-A64F-EF46474E4B39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED906821-C3C7-478F-B820-8510DF3B93F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED906821-C3C7-478F-B820-8510DF3B93F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED906821-C3C7-478F-B820-8510DF3B93F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED906821-C3C7-478F-B820-8510DF3B93F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC24A2E-1B1C-4CD7-A64F-EF46474E4B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC24A2E-1B1C-4CD7-A64F-EF46474E4B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC24A2E-1B1C-4CD7-A64F-EF46474E4B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC24A2E-1B1C-4CD7-A64F-EF46474E4B39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF8C74D2-3D85-445C-95FA-E75CBAD3B320}
+	EndGlobalSection
+EndGlobal
