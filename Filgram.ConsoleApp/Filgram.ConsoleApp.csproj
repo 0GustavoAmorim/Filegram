@@ -15,4 +15,13 @@
     <ProjectReference Include="..\FIlegram.Tests\FIlegram.Tests.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
