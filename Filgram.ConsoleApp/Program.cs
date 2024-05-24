@@ -3,6 +3,8 @@ using Microsoft.Extensions.Hosting;
 using Filegram.ConsoleApp.Configuration;
 using Filegram.ConsoleApp.Controllers;
 using Microsoft.Extensions.Configuration;
+using Filegram.ConsoleApp.Interfaces;
+using Filegram.ConsoleApp.Handlers;
 
 Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((context, config) =>
@@ -12,6 +14,10 @@ Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
     {
         services.AddBotConfiguration(context.Configuration);
+        services.AddTransient<IUpdateHandlerService, UpdateHandlerService>();
+
+
+
         services.AddHostedService<BotController>();
     })
     .Build()
