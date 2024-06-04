@@ -34,6 +34,27 @@ public class UpdateHandlerService : IUpdateHandlerService
             chatId: chatId,
             text: "Você disse:\n" + messageText,
             cancellationToken: cancellationToken);
+
+        await botClient.SendStickerAsync(
+            chatId: chatId, 
+            sticker: InputFile.FromUri("https://github.com/TelegramBots/book/raw/master/src/docs/sticker-dali.webp"),
+            cancellationToken: cancellationToken
+            );
+
+        if (messageText.StartsWith("Soninho"))
+        {
+            await botClient.SendVideoAsync(
+                chatId: chatId,
+                video: InputFile.FromUri("https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4"),
+                cancellationToken: cancellationToken);
+        } 
+        else if (messageText == "Mundo")
+        {
+            await botClient.SendVideoAsync(
+                chatId: chatId,
+                video: InputFile.FromUri("https://file-examples.com/storage/fe4e1227086659fa1a24064/2017/04/file_example_MP4_480_1_5MG.mp4"),
+                cancellationToken: cancellationToken);
+        }
     }
 
     public Task TratarErroDePollingAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
